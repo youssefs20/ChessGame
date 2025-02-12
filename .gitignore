@@ -1,0 +1,24 @@
+# Ignore build outputs
+bin/
+obj/
+Debug/
+Release/
+
+# Ignore Visual Studio files
+.vs/
+*.suo
+*.user
+*.log
+
+
+# Ignore NuGet packagess
+packages/
+project.lock.json
+project.assets.json
+
+# Ignore compiled files
+*.exe
+*.dll
+*.pdb
+*.cache
+*.tlog
