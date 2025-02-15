@@ -33,6 +33,19 @@ namespace ChessUI
             InitializeComponent();
             InitializeBoard();
             
+            GetGameModeChoice();
+        }
+
+        private void GetGameModeChoice()
+        {
+            GameLayoutChoiceMenu choiceMenu = new GameLayoutChoiceMenu();
+            choiceMenu.OptionSelected += GameModeSelectionMade;
+            MenuContainer.Content = choiceMenu;
+        }
+
+        private void GameModeSelectionMade(GameMode mode)
+        {
+            MenuContainer.Content = null;
             gameState = new GameState(Player.White, Board.Initial());
             DrawBoard(gameState.Board);
             SetCursor(gameState.CurrentPlayer);
@@ -222,9 +235,7 @@ namespace ChessUI
         {
             HideHighlights();
             moveCache.Clear();
-            gameState = new GameState(Player.White, Board.Initial());
-            DrawBoard(gameState.Board);
-            SetCursor(gameState.CurrentPlayer);
+            GetGameModeChoice();
         }
     }
 }
