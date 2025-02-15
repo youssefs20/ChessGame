@@ -33,7 +33,24 @@ namespace ChessUI
             InitializeComponent();
             InitializeBoard();
             
+<<<<<<< Updated upstream
             gameState = new GameState(Player.White, Board.Initial());
+=======
+            GetGameModeChoice();
+        }
+
+        private void GetGameModeChoice()
+        {
+            GameLayoutChoiceMenu choiceMenu = new GameLayoutChoiceMenu();
+            choiceMenu.OptionSelected += GameModeSelectionMade;
+            MenuContainer.Content = choiceMenu;
+        }
+
+        private void GameModeSelectionMade(GameMode mode)
+        {
+            MenuContainer.Content = null;
+            gameState = new GameState(Player.White, Board.Initial(ModeFactory.GetMode(mode)));
+>>>>>>> Stashed changes
             DrawBoard(gameState.Board);
             SetCursor(gameState.CurrentPlayer);
         }
