@@ -46,7 +46,7 @@ namespace ChessUI
         private void GameModeSelectionMade(GameMode mode)
         {
             MenuContainer.Content = null;
-            gameState = new GameState(Player.White, Board.Initial());
+            gameState = new GameState(Player.White, Board.Initial(ModeFactory.GetMode(mode)));
             DrawBoard(gameState.Board);
             SetCursor(gameState.CurrentPlayer);
         }

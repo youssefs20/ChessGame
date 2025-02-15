@@ -8,10 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="529e239c-4087-4299-bf2f-aa239b519b44" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ChessUI/GameLayoutChoiceMenu.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessUI/GameLayoutChoiceMenu.xaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessUI/GameMode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessUI/ChessUI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ChessUI/ChessUI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chess/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Chess/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessLogic/ModeFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessLogic/ModeFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessUI/GameMode.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessUI/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessUI/MainWindow.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +38,7 @@
     &quot;.NET Project.ChessUI.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;MenuBuilding&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;GamemodeCreation&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
