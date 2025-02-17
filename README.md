@@ -9,12 +9,16 @@ Chess Game is a C# console-based chess game that allows players to compete in a 
 - **Move Highlighting**: Highlights the possible movement range of each piece.
 - **Pawn Promotion**: Pawns can be promoted upon reaching the opponent's back rank.
 - **Legal Move Restrictions**: Prevents illegal moves and ensures adherence to chess rules.
+- **Chess960**: Supports Chess960, a variant of chess where the back-rank pieces are shuffled randomly, creating a unique game setup.
 
 ## Upcoming Features
 - **Castling**: Implement king-side and queen-side castling mechanics.
 - **Stalemate**: Detect and handle stalemate situations.
 - **En Passant**: Add support for the en passant rule.
 - **Additional Improvements**: Further refinements and enhancements to gameplay.
+
+## Quality & Testing
+- **Unit Testing**: Includes unit tests to ensure the correctness of game mechanics and features. Tests cover critical parts of the code to help maintain stability and detect issues early.
 
 ## Installation & Usage
 1. Clone the repository.
@@ -23,3 +27,6 @@ Chess Game is a C# console-based chess game that allows players to compete in a 
 
 ## Contributing
 Contributions are welcome! Feel free to submit feature requests, report bugs, or suggest improvements.
+
+## Acknowledgements
+A special thanks to Snake-EyE-12 for adding the Chess960 feature and enhancing the gameplay experience.
