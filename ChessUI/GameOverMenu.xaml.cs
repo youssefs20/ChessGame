@@ -45,10 +45,10 @@ namespace ChessUI
         {
             return reason switch
             {
-                EndReason.Stalemate => $"STALEMATE - {PlayerString(currentPlayer)} CANT'T MOVE",
-                EndReason.Checkmate => $"CHECKMATE - {PlayerString(currentPlayer)} CANT'T MOVE",
+                EndReason.Stalemate => $"STALEMATE - {PlayerString(currentPlayer)} CAN'T MOVE",
+                EndReason.Checkmate => $"CHECKMATE - {PlayerString(currentPlayer)} CAN'T MOVE",
                 EndReason.FiftyMoveRule => "FIFTY-MOVE_RULE",
-                EndReason.InsufficientMaterial => "INFUFFICIENT MATERIAL",
+                EndReason.InsufficientMaterial => "INSUFFICIENT MATERIAL",
                 EndReason.ThreefoldRepetition => "THREEFOLD REPETITION",
                 _ => ""
             };
