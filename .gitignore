@@ -9,6 +9,8 @@ Release/
 *.suo
 *.user
 *.log
+.idea/
+
 
 
 # Ignore NuGet packagess
