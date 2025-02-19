@@ -10,8 +10,12 @@ namespace ChessLogic
     {
         private readonly Piece[,] pieces = new Piece[8, 8];
 
+        //added 2 positions / one for each player
+        //when player moves one of their pawn 2 squares
+        //will will store the position it skipped here (en passant square)
         private readonly Dictionary<Player, Position> pawnSkipPositions = new Dictionary<Player, Position>
         {
+            //both pos null
             {Player.White, null },
             {Player.Black, null }
         };
@@ -27,11 +31,14 @@ namespace ChessLogic
             set { this[pos.Row, pos.Column] = value; }
         }
 
+        //helper methods for en passant
+        //if the player moved pawn 2 squares on the previous turn 
+        //this method will return postion of the skipped square
         public Position GetPawnSkipPosition(Player player)
         {
             return pawnSkipPositions[player];
         }
-
+        // helper methods for en passant
         public void SetPawnSkipPosition(Player player, Position pos)
         {
             pawnSkipPositions[player] = pos;

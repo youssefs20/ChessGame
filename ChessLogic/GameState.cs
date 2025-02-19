@@ -32,6 +32,8 @@ namespace ChessLogic
 
         public void MakeMove(Move move)
         {
+            //Reset Skipped Position
+            Board.SetPawnSkipPosition(CurrentPlayer, null);
             move.Execute(Board);
             CurrentPlayer = CurrentPlayer.Opponent();
             CheckForGameOver();
