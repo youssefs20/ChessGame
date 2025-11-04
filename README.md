@@ -1,5 +1,19 @@
 # Chess
 
+##Screenshots
+![Screenshot](images/1739456234211.jpg)
+![Screenshot](images/1739456235124.jpg)
+
+<details>
+<summary> More screenshots </summary>
+
+![Screenshot](images/1739456234556.jpg)
+![Screenshot](images/1739456235053.jpg)
+![Screenshot](images/1739456235155.jpg)
+
+</details>
+
+
 ## Overview
 Chess Game is a C# console-based chess game that allows players to compete in a turn-based manner. The game includes essential chess mechanics along with additional features for an enhanced experience.
 
